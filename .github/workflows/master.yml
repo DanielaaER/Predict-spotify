@@ -18,7 +18,7 @@ jobs:
     - name: download dataset
       run: wget -O data/playlist.csv ${{github.event.client_payload.dataseturl}}
     - name: cat dataset
-      run: cat data/GlobalWeatherRepository.csv
+      run: cat data/playlist.csv
     - name: Entrenar modelo de Machine Learning
       run: python model/random_forest/random_forest.py
     - name: Constuir Imagen Docker
