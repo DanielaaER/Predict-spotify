@@ -16,7 +16,7 @@ jobs:
     - name: Instalar dependencias
       run: pip install -r requirements.txt
     - name: download dataset
-      run: wget -O data/playlist.csv ${{github.event.client_payload.dataseturl}}
+      run: wget -O data/spotify.csv ${{github.event.client_payload.dataseturl}}
     - name: cat dataset
       run: cat data/playlist.csv
     - name: Entrenar modelo de Machine Learning
